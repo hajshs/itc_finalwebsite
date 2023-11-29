@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>nxtgen</title>
+
+    <style>
+		
+		body {
+		
+		margin:0;
+		padding:0;
+		
+		}
+        .header{
+        background-color: #201c1c;
+        height: 75px;
+        width: 100%;
+        display: flex;
+        position: fixed;
+        z-index: 3;
+		}
+
+		#logo, #headername, #profile, #menu{
+        display: block;
+        position: fixed;
+		}
+
+		#logo{
+        height: 50px;
+        width: auto;
+        top: 1.5%;
+        left: 1.3%;
+		}
+
+		#headername{
+        height: 50px;
+        width: auto;
+        top: 1.5%;
+        left: 47%;
+		}
+
+		#profile{
+        height: 180px;
+        width: auto;
+        top: -6.7%;
+        left: 92.5%;
+		}
+
+		#menu{
+        top: -6.7%;
+        left: 92.5%;
+		}
+
+	    .movingtextcontainer{
+        display: flex;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        position: fixed;
+        z-index: 3;
+        top: 10%;
+        background-color: white;
+		}
+
+        .container {
+            height: 100vh;
+            width: 100%;
+        }
+
+        .slides1 img {
+            position: relative;
+            width:100%;
+            height: 700px;
+            z-index: 2;
+            margin-top: 30px;
+		
+           
+        }
+		
+		.slider {
+        width: 100%;
+        height: 100vh;
+        margin-left: 0;
+        margin-right:0;
+        margin-top: -100px;
+        text-align: center;
+        overflow: hidden;
+      }
+	  
+		
+	  
+		#slide-1:target ~ .image-container {
+		left: 0%;
+      }
+		#slide-2:target ~ .image-container {
+		left: -100%;
+      }
+		#slide-3:target ~ .image-container {
+        left: -200%;
+      }
+		#slide-4:target ~ .image-container {
+        left: -300%;
+      }
+		
+		.image-container {
+        width: 4440px;
+        z-index:1;
+        height: 100px;
+        clear: both;
+        position: relative;
+		display:flex;
+		margin-top:-27px;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+		
+		.buttons {
+        position: relative;
+        top: 10px;
+		z-index:2;
+		
+      }
+	  
+		.buttons a {
+		display: inline-block;
+        height: 20px;
+        width: 20px;
+        border-radius: 50px;
+        background-color: white;
+		margin-right: 2px;
+		margin-bottom: -590px;
+		z-index:2;
+		position:relative;
+      }
+		
+		.section1 {
+	   
+		background-color:black;
+		width: 100%;
+		height: 15px;
+		margin-top: -2px;
+		margin-top: -11px;
+		position:absolute;
+		z-index:3;
+	   }
+		.section2 {
+	   
+		background-color:white;
+		width: 100%;
+		height: 50px;
+		margin-top:100px;
+		position:absolute;
+		z-index:3;
+	   }
+	   
+	   .text1 {
+	   
+		font-size:11px;
+		color: black;
+		font-family: Verdana;
+		margin-top: 5px;
+		margin-left: 10px;
+		z-index: 4;
+		position: absolute;
+		
+    
+	   
+	   }
+	   
+	   
+	   .text2 {
+	   
+		font-size:11px;
+		color: black;
+		font-family: Verdana;
+		margin-top: 5px;
+		margin-left: 250px;
+		z-index: 4;
+		position: absolute;
+	   }
+	   
+	   #aus {
+	   
+	   font-family: Verdana;
+	   font-size:19px;
+	   margin-top:-10px;
+	   position:absolute;
+	   z-index:4'
+	   line-height:;
+	   text-decoration:none;
+	   color:black;
+	   white-space:nowrap;
+	   line-height:1.5;
+	   
+	   }
+	   
+	   
+	   
+	   .text3 {
+	   
+	   font-size:11px;
+		color: black;
+		font-family: Verdana;
+		margin-top: 5px;
+		margin-left: 450px;
+		z-index: 4;
+		position: absolute;
+	   }
+	   .text4 {
+	   
+	   color:black;
+	   font-family: Helvetica;
+	   font-size:25px;
+	   margin-top:-15px;
+	   margin-left:1130px;
+	   z-index:4;
+	   position:absolute;
+	   white-space:nowrap;
+	   }
+	   
+	   
+        
+      
+    </style>
+
+    </head>
+
+    <body>
+        <div class = "header">
+			<a href = "index.html" target = "_self">
+            <img src = "icons/logo.png" id = "logo">
+			</a>
+			<a href = "index.html" target = "_self">
+			<img src = "icons/name.png" id = "headername">
+			</a>
+			<a href = "login.html" target = "_self">
+			<img src = "icons/profile.png" id = "profile">
+			</a>
+		</div>
+		<div class = "movingtextcontainer">
+			<marquee class = "movingtext" behavior = "scroll" direction = "left">SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · </marquee>
+        </div>
+        <div class="container">
+            <div class="slides1">
+                <img src="AusBG.jpg" id = "pg6">
+			<div class="slider">
+				<span id="slide-1"></span>
+				<span id="slide-2"></span>
+				<span id="slide-3"></span>
+				<span id="slide-4"></span>
+			<div class="image-container">
+				<img src="slideshow/s1.jpg" class="slide" style = "height:950px; width:1480.7px;"/>
+				<img src="slideshow/s2.jpg" class="slide" style = "height:950px; width:1480.7px;"/>
+				<img src="slideshow/s3.jpg" class="slide" style = "height:950px; width:1480.7px;"/>
+				<img src="slideshow/s4.jpg" class="slide" style = "height:950px; width:1480.7px;"/>
+			</div>
+			<div class="buttons">
+				<a href="#slide-1"></a>
+				<a href="#slide-2"></a>
+				<a href="#slide-3"></a>
+				<a href="#slide-4"></a>
+			</div>
+			</div>
+			<div class = "section1">
+				<p></p>
+			</div>
+			<div class = "section2">
+				<p></p>
+			</div>
+			<div class = "text1">
+				<h1> Company Info </h1>
+				<p><a href = "About.html" target = "_self" id = "aus" > About us </a></p>
+				<br>
+				<p><a href = "Discover.html" target = "_self" id = "aus" > Discover </a></p>
+				<br>
+				<p><a href = "Career.html" target = "_self" id = "aus" > Career </a></p>
+			</div>
+			<div class = "text2">
+				<h1> Support </h1>
+				<p><a href = "Help.html" target = "_self" id = "aus" > Help </a></p>
+				<br>
+				<p><a href = "Order.html" target = "_self" id = "aus" > How to order? </a></p>
+				
+			</div>
+			<div class = "text3">
+				<h1> Products </h1>
+				<p><a href = "Shoes.html" target = "_self" id = "aus" > All Shoes </a></p>
+				<br>
+				<p><a href = "Clothing.html" target = "_self" id = "aus" > All Clothing </a></p>
+			</div>
+			<div class = "text4">
+				<p> © 2019 nxt All Rights Reserved </p>
+			</div>
+        </div>
+
+    </body>
+	
+
+    </html>

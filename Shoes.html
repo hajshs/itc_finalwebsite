@@ -1,52 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>nxtgen</title>
-
-<style>
-
-    body{
-        margin: 0;
-        padding: 0;
-    }
-
-    .header{
+	<title> Slide animation </title>
+	<style> 
+	
+	body {
+		
+		margin:0;
+		padding:0;
+		
+		}
+        .header{
         background-color: #201c1c;
         height: 75px;
         width: 100%;
         display: flex;
         position: fixed;
+		top:0;
         z-index: 3;
-    }
+		}
 
-    #logo, #headername, #profile, #menu{
+		#logo, #headername, #profile, #menu{
         display: block;
         position: fixed;
-    }
+		}
 
-    #logo{
+		#logo{
         height: 50px;
         width: auto;
         top: 1.5%;
         left: 1.3%;
-    }
+		
+		}
 
-    #headername{
+		#headername{
         height: 50px;
         width: auto;
         top: 1.5%;
         left: 47%;
-    }
+		}
 
-    #profile{
-        height: 180px;
+		#profile{
+		height: 180px;
         width: auto;
-        top: -7.5%;
+        top: -6.7%;
         left: 92.5%;
-    }
+		}
 
-    .movingtextcontainer{
+		#menu{
+        top: -6.7%;
+        left: 92.5%;
+		}
+
+	    .movingtextcontainer{
         display: flex;
         width: 100%;
         height: 50px;
@@ -57,147 +62,115 @@
         z-index: 3;
         top: 10%;
         background-color: white;
-    }
+		}
 
-    #firstbg{
-        display: flex;
-        height: 739px;
-        width: 100%;
+	
+	#allshoes, .bg{
+        display: block;
         position: relative;
         z-index: 2;
+		
     }
-
-    #secondbg{
-        display: flex;
-        height: 615px;
-        width: 100%;
-        position: relative;
-        z-index: 2;
-    }
-
-    .fourthbg{
+	
+	#allshoes {
+	
+	position:relative;
+	display:block;
+	height: 739px;
+    width: 100%;
+	margin-top:40px;
+	z-index:2;
+	
+	
+	}
+    .finalbg{
         display: flex;
         height: 630px;
         width: 100%;
 		
     }
 
-    #fourthbg{
+    #finalbg{
         position: fixed;
-        top: 16%;
+        top: 13%;
         display: flex;
         height: 630px;
         width: 100%;
     }
+
     
-    #fb, #ig, #twitter, #pinterest, #tiktok, #yt, #about{
-        display: block;
-        position: fixed;
-        z-index: 1;
+    .bg{
+        height: 615px;
+        width: 100%;
+		 z-index: 2;
     }
-
-    #fb{
-        height: 130px;
-        top: 39%;
-        left: 18.5%;
-    }
-
-    #ig{
-        height: 130px;
-        width: 142px;
-        top: 39%;
-        left: 28.9%;
-    }
-
-    #twitter{
-        height: 122px;
-        width: 142px;
-        top: 39.3%;
-        left: 39.6%;
-    }
-
-    #pinterest{
-        height: 112px;
-        width: 122px;
-        top: 40%;
-        left: 51.1%;
-    }
-
-    #tiktok{
-        height: 132px;
-        width: 145px;
-        top: 39%;
-        left: 61.1%;
-    }
-
-    #yt{
-        height: 120px;
-        width: 134px;
-        top: 39.5%;
-        left: 72.6%;
-    }
-
-    #fb:hover, #ig:hover, #twitter:hover, #pinterest:hover, #tiktok:hover, #yt:hover{
-        transform: scale(2);
-        transition: transform 0.3s ease-in-out;
-    }
-
-    #about, #discover, #career, #help, #order, #shoes, #clothing{
+	
+	#about, #discover, #career, #help, #order, #shoes, #clothing{
         display: block;
         position: fixed;
         z-index: 1;
 		
 	
     }
+	
+	
 
     #about{
         height: 13px;
-        top: 87%;
+        top: 84.5%;
         left: 0.8%;
     }
+	
+	 #about:hover{
+        text-decoration:underline;
+    }
+	
 
     #discover{
         height: 13px;
-        top: 90.5%;
+        top: 88.7%;
         left: 0.86%;
     }
 
     #career{
         height: 13px;
-        top: 94%;
+        top: 92.7%;
         left: 0.8%;
     }
 
     #help{
         height: 16px;
-        top: 87%;
+        top: 84.5%;
         left: 16.5%;
     }
 
     #order{
         height: 13px;
-        top:  90.5%;
+        top:  88.7%;
         left: 16.5%;
     }
 
     #shoes{
         height: 13px;
-        top: 87%;
+        top: 84.5%;
         left: 28.5%;
     }
 
     #clothing{
         height: 13px;
         width: 97px;
-        top: 90.5%;
+        top: 88.7%;
         left: 28.5%;
     
     }
-</style>
+	
+	
+	
+	
+	</style>
 </head>
-
 <body>
-    <div class = "header">
+<div class = "header">
         <a href = "index.html" target = "_self">
             <img src = "icons/logo.png" id = "logo">
         </a>
@@ -210,37 +183,44 @@
     </div>
     <div class = "movingtextcontainer">
         <marquee class = "movingtext" behavior = "scroll" direction = "left">SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · </marquee>
-        </div>
-    <div class = "firstbg">
-        <img src = "bg/first.png" id = "firstbg"> 
     </div>
-    <div class = "secondbg">
-        <img src = "bg/second.png" id = "secondbg"> 
+	<div class = "container">
+    <div>
+        <img src = "Shoes/shoes.png" id = "allshoes">
     </div>
-    <div class = "thirdbg">
-        <img src = "bg/third.png" id = "secondbg"> 
+    <div>
+        <img src = "Shoes/lowdunk.png" class = "bg">
     </div>
-    <div class = "fourthbg">
-        <img src = "bg/fourth.png" id = "fourthbg">
-            <a href = "https://www.facebook.com/xxllenu.Jeanne" target = "_blank">
-                <img src = "icons/fb.png" id = "fb">
-            </a>
-            <a href = "https://www.facebook.com/kntbrncyyn" target = "_blank">
-                <img src = "icons/ig.png" id = "ig">
-            </a>
-            <a href = "https://www.facebook.com/Vinceemejas24/" target = "_blank">
-                <img src = "icons/twitter.png" id = "twitter">
-            </a>
-            <a href = "https://www.facebook.com/stephaniealveroligon" target = "_blank">
-                <img src = "icons/pinterest.png" id = "pinterest">
-            </a>
-            <a href ="https://www.facebook.com/kimmonteagudo.cali" target = "_blank">
-                <img src = "icons/tiktok.png" id = "tiktok">
-            </a>
-            <a href = "https://www.facebook.com/joshaunarag" target = "_blank">
-                <img src = "icons/yt.png" id = "yt">
-            </a>
-            <a href = "About.html" target = "_self">
+    <div>
+        <img src = "Shoes/travis.png" class = "bg">
+    </div>
+    <div>
+        <img src = "Shoes/airdrop.png" class = "bg">
+    </div>
+    <div>
+        <img src = "Shoes/lwkey.png" class = "bg">
+    </div>
+    <div>
+        <img src = "Shoes/K_01X1.png" class = "bg">
+    </div>
+    <div>
+        <img src = "Shoes/E_02IX.png" class = "bg">
+    </div>
+    <div>
+        <img src = "Shoes/nxtlife.png" class = "bg">
+    </div>
+    <div>
+        <img src = "Shoes/shift.png" class = "bg">
+    </div>
+    <div>
+        <img src = "Shoes/mxta.png" class = "bg">
+    </div>
+    <div>
+        <img src = "Shoes/aus.png" class = "bg">
+    </div>
+	<div class = "finalbg">
+        <img src = "lastbg.png" id = "finalbg">
+            <a href = "about.html" target = "_self">
                 <img src = "below/about.JPG" id = "about">
             </a>
             <a href = "discover.html" target = "_self">
