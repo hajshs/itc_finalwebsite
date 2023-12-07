@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>nxtgen</title>
+    <link rel = "icon" href = "images/tab/tab.ico" type = "image/x-icon">
 <style>
 
 body{
@@ -11,39 +12,48 @@ body{
     }
 
     .header{
-        background-color: #201c1c;
-        height: 75px;
-        width: 100%;
-        display: flex;
-        position: fixed;
-        z-index: 3;
-    }
+    background-color: #201c1c;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 3;
+}
 
-    #logo, #headername, #profile, #menu{
-        display: block;
-        position: fixed;
-    }
+#logo, #headername, #profile, #menu{
+    display: block;
+    position: fixed;
+}
 
-    #logo{
-        height: 50px;
-        width: auto;
-        top: 1.5%;
-        left: 1.3%;
-    }
+#logo{
+    height: 50px;
+    width: auto;
+    top: 1.5%;
+    left: 1.3%;
+}
 
-    #headername{
-        height: 50px;
-        width: auto;
-        top: 1.5%;
-        left: 47%;
-    }
+#headername{
+    height: 50px;
+    width: auto;
+    top: 1.5%;
+    left: 47%;
+}
 
-    #profile{
-        height: 180px;
-        width: auto;
-        top: -6.7%;
-        left: 92.5%;
-    }
+#profile, #menu{
+    height: 180px;
+    width: auto;
+}
+
+#profile{
+    top: -7%;
+    left: 87.5%;
+}
+
+#menu{
+    top: -6.7%;
+    left: 92.5%;
+    cursor: pointer;
+}
 
     .movingtextcontainer{
         display: flex;
@@ -129,21 +139,122 @@ body{
         left: 28.5%;
     }
 
+    .sidebar {
+        height: 100%;
+        width: 0px;
+        position: fixed;
+        z-index: 4;
+        top: 0;
+        right: 0;
+        background-color: white;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        border: 1px solid black;
+    }
+
+    #slogo, .title, #sabout, #sdiscover, #scareer, #sshoes, #sclothing, #sorder, #shelp{
+        display: block;
+        position: absolute;
+        z-index: 4;
+        text-decoration: none;
+        color: black;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    #slogo{
+        height: 75px;
+        top: 1%;
+        left: 5%;
+    }
+
+    #sabout, #sdiscover, #scareer, #sshoes, #sclothing, #shelp, #sorder{
+        font-size: 18px;
+        font-weight: 1;
+        left: 20%;
+    }
+
+    .title{
+        font-weight: 900;
+        font-size: 25px;
+    }
+
+    #scompany{
+        top: 9%;
+    }
+
+    #sabout{
+        top: 16%;
+    }
+
+    #sdiscover{
+        top: 20%;
+    }
+
+    #scareer{
+        top: 24%;
+    }
+
+    #sproducts{
+        top: 29%;
+    }
+
+    #sshoes{
+        top: 36%;
+    }
+
+    #sclothing{
+        top: 40%;
+    }
+
+    #ssupport{
+        top: 45%;
+    }
+
+    #shelp{
+        top: 52%;
+    }
+
+    #sorder{
+        top: 56%;
+    }
 </style>
 </head>
 <body>
-    <div class = "header">
+    <div class = "header" id = "header">
         <a href = "index.html" target = "_self">
             <img src = "images/header/logo.png" id = "logo">
         </a>
         <a href = "index.html" target = "_self">
         <img src = "images/header/name.png" id = "headername">
         </a>
+        <a href = "login.html">
         <img src = "images/header/profile.png" id = "profile">
+        </a>
+        <img src = "images/header/menu.png" id = "menu">
     </div>
     <div class = "movingtextcontainer">
         <marquee class = "movingtext" behavior = "scroll" direction = "left">SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · </marquee>
     </div>
+    <div id = "sidebar" class = "sidebar">
+        <img src = "images/header/blogo.png" id = "slogo">
+        <ul>
+            <p class = "title" id = "scompany">Company Info</p>
+            <a href = "about.html"><p id = "sabout">About us</p></a>
+            <a href = "discover.html"><p id = "sdiscover">Discover</p></a>
+            <a href = "career.html"><p id = "scareer">Career</p></a>
+            <p class = "title" id = "sproducts">Products</p>
+            <a href = "shoes.html"><p id = "sshoes">All Shoes</p></a>
+            <a href = "clothing.html"><p id = "sclothing">All Clothing</p></a>
+            <p class = "title" id = "ssupport">Support</p>
+            <a href = "help.html"><p id = "shelp">Help</p></a>
+            <a href = "order.html"><p id = "sorder">How to Order?</p></a>
+        </ul>
+    </div>
+    <div class = "movingtextcontainer">
+        <marquee class = "movingtext" behavior = "scroll" direction = "left">SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · SALE SALE SALE · PRICE DROP UP TO 30% OFF · ORDER NOW · </marquee>
+    </div>
+    <div id = "body">
     <div>
         <img src = "images/career/career.png" id = "careerpage">
     </div>
@@ -171,5 +282,25 @@ body{
                 <img src = "images/below/clothing.JPG" id = "clothing">
             </a>
     </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const openBtn = document.getElementById('menu');
+            const closeBtn = document.getElementById('body');
+            const sidebar = document.getElementById('sidebar');
+    
+        menu.addEventListener('click', function () {
+            sidebar.style.width = '250px';
+            closeBtn.style.opacity = '0.5';
+            });
+    
+        body.addEventListener('click', function () {
+            sidebar.style.width = '0';
+            closeBtn.style.opacity = '1';
+            });
+        });
+    
+    </script>
 </body>
 </html>
