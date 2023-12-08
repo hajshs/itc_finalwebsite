@@ -368,20 +368,26 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        const openBtn = document.getElementById('menu');
-        const closeBtn = document.getElementById('body');
-        const sidebar = document.getElementById('sidebar');
+            const openBtn = document.getElementById('menu');
+            const closeBtn = document.getElementById('body');
+            const sidebar = document.getElementById('sidebar');
+            const close = document.getElementById('slogo');
+    
+        menu.addEventListener('click', function () {
+            sidebar.style.width = '250px';
+            closeBtn.style.opacity = '0.5';
+            });
+    
+        body.addEventListener('click', function () {
+            sidebar.style.width = '0';
+            closeBtn.style.opacity = '1';
+            });
 
-    menu.addEventListener('click', function () {
-        sidebar.style.width = '250px';
-        closeBtn.style.opacity = '0.5';
+        slogo.addEventListener('click', function () {
+			sidebar.style.width = '0';
+			closeBtn.style.opacity = '1';
+			});
         });
-
-    body.addEventListener('click', function () {
-        sidebar.style.width = '0';
-        closeBtn.style.opacity = '1';
-        });
-    });
 
 </script>
 </body>

@@ -286,6 +286,7 @@ body{
             const openBtn = document.getElementById('menu');
             const closeBtn = document.getElementById('body');
             const sidebar = document.getElementById('sidebar');
+            const close = document.getElementById('slogo');
     
         menu.addEventListener('click', function () {
             sidebar.style.width = '250px';
@@ -296,6 +297,11 @@ body{
             sidebar.style.width = '0';
             closeBtn.style.opacity = '1';
             });
+
+        slogo.addEventListener('click', function () {
+			sidebar.style.width = '0';
+			closeBtn.style.opacity = '1';
+			});
         });
 
     </script>

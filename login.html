@@ -392,7 +392,7 @@ body{
 		<p> I don't want to receive emails about nxtgen. and related product <br> and feature updates, promotions, and offers from nxtgen.</p>
 	</div>
 	<div class = "text2" >
-		<p> By creating an account, you agree to our Terms and have read and <br> acknowledge. <a href = "https://www.sunlife.com/sl/pslf-worldwide/en/privacy/our-global-privacy-commitment/" target = "_blank" > the Global Privacy Statement.</a></p>
+		<p> By creating an account, you agree to our Terms and have read and <br> acknowledge.</p>
 	</div>
 		<button type="submit" id="submit">Sign Up</button>
 	<div class = "text3">
@@ -404,6 +404,7 @@ body{
             const openBtn = document.getElementById('menu');
             const closeBtn = document.getElementById('body');
             const sidebar = document.getElementById('sidebar');
+            const close = document.getElementById('slogo');
     
         menu.addEventListener('click', function () {
             sidebar.style.width = '250px';
@@ -414,6 +415,11 @@ body{
             sidebar.style.width = '0';
             closeBtn.style.opacity = '1';
             });
+
+        slogo.addEventListener('click', function () {
+			sidebar.style.width = '0';
+			closeBtn.style.opacity = '1';
+			});
         });
     </script>
 

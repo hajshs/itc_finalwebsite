@@ -335,20 +335,26 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            const openBtn = document.getElementById('menu');
-            const closeBtn = document.getElementById('container');
-            const sidebar = document.getElementById('sidebar');
-    
-        menu.addEventListener('click', function () {
-            sidebar.style.width = '250px';
-            closeBtn.style.opacity = '0.5';
-            });
-    
-        container.addEventListener('click', function () {
-            sidebar.style.width = '0';
-            closeBtn.style.opacity = '1';
-            });
-        });
+				const openBtn = document.getElementById('menu');
+				const closeBtn = document.getElementById('container');
+				const sidebar = document.getElementById('sidebar');
+				const close = document.getElementById('slogo');
+		
+			menu.addEventListener('click', function () {
+				sidebar.style.width = '250px';
+				closeBtn.style.opacity = '0.5';
+				});
+		
+			container.addEventListener('click', function () {
+				sidebar.style.width = '0';
+				closeBtn.style.opacity = '1';
+				});
+			
+			slogo.addEventListener('click', function () {
+				sidebar.style.width = '0';
+				closeBtn.style.opacity = '1';
+				});
+			})
     </script>
 </body>
 </html>
