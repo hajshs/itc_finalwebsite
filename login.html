@@ -82,6 +82,7 @@ body{
         height: 75px;
         top: 1%;
         left: 5%;
+		cursor: pointer;
     }
 
     #sabout, #sdiscover, #scareer, #sshoes, #sclothing, #shelp, #sorder{
@@ -314,16 +315,15 @@ body{
 	left:44.5%;
 	position:absolute;
 	z-index: 2;
-	
-	
 	}
 	
+	.text3 a{
+		color: blue;
+		text-decoration: underline;
+	}
 	
 	.text3 a:hover{
-	
-	color:black;
 	text-decoration:underline;
-	
 	}
 	
 	#whitebg{
@@ -333,6 +333,12 @@ body{
 		display: block;
 		height: 100%;
 		width: 100%;
+	}
+
+	#signin{
+		color: blue;
+		text-decoration: underline;
+		cursor: pointer;
 	}
 	
 </style>
@@ -396,7 +402,7 @@ body{
 	</div>
 		<button type="submit" id="submit">Sign Up</button>
 	<div class = "text3">
-		<p> Already on nxtgen.? <a> Sign in </a> </p>
+		<p> Already on nxtgen.? <a class = "signin"> Sign in </a> </p>
 	</div>
 	</div>
 	<script>
